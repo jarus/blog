@@ -13,6 +13,7 @@
   {% endif %}
   {%- endfor %}
   
+  {% if posts.need_pagination %}
   <div class="pagination pagination-centered">
     <ul>
       {% if posts.has_prev -%}
@@ -34,5 +35,6 @@
       {%- endif %}
     </ul>
   </div>
+  {% endif %}
 
 {% endblock %}
