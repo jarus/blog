@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% block htmlhead %}
+    <title>{% block title %}Home{% endblock %} | {{ config['SITE_NAME'] }}</title>
+
+    {% for href, type, title in config['FEEDS'] %}
+    <link href="{{ href }}" type="{{ type }}" rel="alternate" title="{{ title }}" />
+    {% endfor %}
+    
+    {% for stylesheet in config['STYLESHEETS'] %}
+    <link rel="stylesheet" href="{{ stylesheet }}" type="text/css">
+    {% endfor %}
+
+    {% endblock %}
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="hidden-phone span2"></div>
+        
+        <div class="span8">
+          <div class="subnav">
+            <ul class="nav nav-pills">
+              {% for link, name in navigation %}
+              <li><a href="{{ link }}">{{ name }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          
+          {% block body %}{% endblock %}
+
+          <footer class="footer">
+              <p><i class="icon-github"></i> <a href="https://github.com/jarus">GitHub</a> // <i class="icon-twitter"></i> <a href="https://twitter.com/christophheer">Twitter</a> // <i class="icon-envelope"></i> <a href="mailto:christoph.heer@googlemail.com">E-Mail</a></p>
+              <p class="pull-right"><i class="icon-arrow-up"></i> <a href="#">Back to top</a></p>
+              <p>&copy; Copyright {{ date.today().strftime("%Y") }} by {{ config['AUTHOR_NAME'] }}</p>
+              <p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+          </footer>
+          
+        </div>
+        
+        <div class="hidden-phone span2"></div>
+      </div>
+    </div>
+  </body>
+</html>

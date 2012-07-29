@@ -1,0 +1,9 @@
+<div class="github-repo breadcrumb">
+  <p>
+    <i class="icon-github" style="font-size: 120%"></i>
+    <a href="{{ repo['html_url'] }}">{{ repo['full_name'] }}</a> - {{ repo['language'] }}
+  </p>
+  <p class="github-repo-description">{{ repo['description'] }}</p>
+  <a class="btn" href="{{ repo['html_url'] }}"><i class="icon-eye-open"></i> Watch <span class="badge badge-info">{{ repo['watchers_count'] }}</span></a>
+  <a class="btn pull-right" href="{{ repo['html_url'] }}"><i class="icon-sitemap"></i> Fork <span class="badge badge-info">{{ repo['forks_count'] }}</span></a>
+</div>
