@@ -16,6 +16,7 @@ MODULES = {
     'flaskrst.modules.atom': {  
     },
     'flaskrst.modules.pygments': {
+        'css_file_route': '/pygments.css'
     },
     'flaskrst.modules.github': {
     }

@@ -5,12 +5,8 @@
   {%- for post in posts.page_content|sort(attribute='pub_date',reverse=True) %}
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
   <p>{{ post.pub_date.strftime("%b %d, %Y") }}</p>
-  {% if post.config.has_key('summary') %}
-    <p>{{ post.config['summary'] }}</p>
-  {% else %}
-  {% if config['MODULES']['blog'].get('body_as_summary_fallback') %}
-    <p>{{ post.body }}</p>
-  {% endif %}
+  {% if post.summary %}
+  <div class="summary">{{ post.summary }}</div>
   {% endif %}
   {% if not loop.last %}
   <hr>
