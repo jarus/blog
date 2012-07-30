@@ -4,21 +4,19 @@ AUTHOR_NAME = "Christoph Heer"
 AUTHOR_EMAIL = "christoph.heer@googlemail.com"
 
 MODULES = {
-    'flaskrst.modules.page': {
-    },
+    'flaskrst.modules.page': {},
     'flaskrst.modules.blog': {
         'body_as_summary_fallback': True
     },
-    'flaskrst.modules.archive': {
-    },
-    'flaskrst.modules.tags': {
-    },
-    'flaskrst.modules.atom': {  
-    },
+    'flaskrst.modules.archive': {},
+    'flaskrst.modules.tags': {},
+    'flaskrst.modules.atom': {},
     'flaskrst.modules.pygments': {
         'css_file_route': '/pygments.css'
     },
-    'flaskrst.modules.github': {
+    'flaskrst.modules.github': {},
+    'flaskrst.modules.disqus': {
+        'shortname': 'christophheer'
     }
 }
 
