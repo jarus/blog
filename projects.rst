@@ -1,17 +1,17 @@
 Projects
 ========
 
-The most of my projects are written in Python but sometimes was an other language the better choice.
+Most of my projects are written in Python but sometimes another language was just the better choice.
 
 Open Source
 -----------
 
-All of my open source projects are hosted on `GitHub`_ or `BitBucket`_. Pull Requets are always welcome! Most of my projects are also testing on `Travis CI`_. 
+All of my open source projects are hosted on `GitHub`_ or `BitBucket`_. Pull Requets are always welcome! Most of my projects are also tested on `Travis CI`_. 
 
 Flask extensions
 ****************
 
-My contribute to the `Flask extension`_ ecosystem system.
+My contributions to the `Flask extension`_ ecosystem.
 
 .. github-repo:: jarus/flask-testing
 
