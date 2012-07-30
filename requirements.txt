@@ -1,0 +1,3 @@
+--upgrade git+https://github.com/jarus/flask-rst.git
+requests
+pygments
