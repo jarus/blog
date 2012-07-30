@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-SITE_NAME = "Christoph's Blog"
+SITE_NAME = "Christoph Heer"
 AUTHOR_NAME = "Christoph Heer"
 AUTHOR_EMAIL = "christoph.heer@googlemail.com"
 
