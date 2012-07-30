@@ -31,7 +31,7 @@ def git_pull():
 @task
 def update_virtualenv():
     with cd(env.source_dir):
-        run('pip install -r %s' % env.requirements_file)
+        run('pip install --upgrade -r %s' % env.requirements_file)
 
 @task
 def deploy():
