@@ -3,7 +3,7 @@ Dash.app - Documentation Browser for Mac
 
 :public: True
 :tags: ["mac", "dash", "docs", "flask"]
-:summary: "A programmer need documentation."
+:summary: "A programmer needs documentation."
 
 Documentation. Every programmer needs documentation about a framework or the standard library of a programming language. If you using Mac OS than you should take a look on `Dash`_. It's a great application to browse in documentation or manage snippets. I'm not the guy with millions snippets so I am not qualified to rate the snippet part of Dash but the documentation browsing part is amazing.
 

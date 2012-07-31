@@ -31,7 +31,7 @@ Some projects to show the simplicity and elegance of `Flask`_ websites in code a
 Munin plugins
 *************
 
-I like statistics of my servers and services. The most time I use `Munin`_ to generate some graphs but I want more graphs about special services so I wrote plugins for `Munin`_.
+I like statistics on my servers and services. Most of the time I use `Munin`_ to generate graphs but because I want more graphs about special services, I have written plugins for `Munin`_.
 
 .. github-repo:: jarus/munin-prosody
 
