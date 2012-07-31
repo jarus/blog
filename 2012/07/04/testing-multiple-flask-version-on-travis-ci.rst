@@ -5,7 +5,7 @@ Testing multiple Flask version on Travis-CI
 :tags: ["flask", "extension", "testing", "travis-ci"]
 :summary: "As a Flask extension developer you will normally want to test your extension against a list of Flask versions."
 
-As a `Flask`_ extension developer you want normaly to test your extension agains a list of Flask versions. On `Travis-CI`_ it's very simple and upsetting powerful.
+As a `Flask`_ extension developer you will normaly want to test your extension against a list of Flask versions. On `Travis-CI`_ it's very simple and amazingly powerful.
 
 The following ``.travis.yml`` file shows you how I test my Flask extensions.
 
