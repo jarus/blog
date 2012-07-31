@@ -22,7 +22,7 @@ MODULES = {
 
 NAVIGATION = [
     {
-        'label': 'Christoph Heer',
+        'label': 'About me',
         'route': 'page.show',
         'file_path': 'about',
     },
