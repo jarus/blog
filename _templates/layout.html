@@ -35,6 +35,7 @@
           {% block body %}{% endblock %}
 
           <footer class="footer">
+            <p class="pull-right"><i class="icon-rss"></i> <a href="{{ url_for('atom.atom_feed') }}">RSS Feed</a></p>
               <p><i class="icon-github"></i> <a href="https://github.com/jarus">GitHub</a> // <i class="icon-twitter"></i> <a href="https://twitter.com/christophheer">Twitter</a> // <i class="icon-envelope"></i> <a href="mailto:christoph.heer@googlemail.com">E-Mail</a></p>
               <p class="pull-right"><i class="icon-arrow-up"></i> <a href="#">Back to top</a></p>
               <p>&copy; Copyright {{ date.today().strftime("%Y") }} by {{ config['AUTHOR_NAME'] }}</p>
