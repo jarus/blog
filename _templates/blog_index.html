@@ -8,6 +8,9 @@
   {% if post.summary %}
   <div class="summary">{{ post.summary }}</div>
   {% endif %}
+  {% if post.summary != post.body %}
+  <p><a href="{{ post.url }}">Read more ...</a></p>
+  {% endif %}
   {% if not loop.last %}
   <hr>
   {% endif %}
