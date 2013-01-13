@@ -54,3 +54,8 @@ div.github-repo {
 	 width: 245px;
 }
 
+div.figure {
+    text-align: center;
+    font-weight: bold;
+}
+
