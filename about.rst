@@ -3,7 +3,8 @@ About Me
 
 Hi I'm Christoph Heer. I'm a keen developer focusing on web development together with other topics like instant messaging or other realtime communication stuff. Most of the time I use the `Python`_ programming language to create software.
 
-I'm currently living in Walldorf (Germany) and doing some freelance work. In addition I'm working on some open source projects.
+I'm currently living in Walldorf (Germany). At daytime I'm study computer science at the Cooperative State
+University Karlsruhe and working for the SAP AG. At night I'm working on some open source projects.
 
 Contact
 -------
