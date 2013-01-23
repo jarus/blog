@@ -8,24 +8,24 @@
   <div class="blog_post">
     {{ post.body }}
   </div>
-  
+
   {% if tags %}
   {{ tags(post) }}
   {% endif %}
-  
+
   <ul class="pager">
     {% if prev %}
     <li class="previous">
-      <a href="{{ prev.url }}">&lt;&lt; {{ prev.title|truncate(20,end='...') }}</a>
+      <a href="{{ prev.url }}">&lt;&lt; {{ prev.title|truncate(50,end='...') }}</a>
     </li>
     {% endif %}
     {% if next %}
     <li class="next">
-      <a href="{{ next.url }}">{{ next.title|truncate(20,end='...') }} &gt;&gt;</a>
+      <a href="{{ next.url }}">{{ next.title|truncate(50,end='...') }} &gt;&gt;</a>
     </li>
     {% endif %}
   </ul>
-  
+
   {% if comments %}
   {{ comments(post) }}
   {% endif %}
