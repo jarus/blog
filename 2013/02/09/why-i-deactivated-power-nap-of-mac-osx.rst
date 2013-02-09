@@ -8,6 +8,7 @@ Why I deactivated Power Nap of Mac OS X
 I really like the idea behind Power Nap of the OS X but I got big trouble afterwards. I backup my Mac with TimeMachine on my NAS (based on Debian Squeeze) with netatalk, which works sweet. Oh, by the way guys of netatalk your are great.
 
 .. image:: /static/img/2013-02-09-why-i-deactivated-power-nap-of-mac-osx/timemachine.png
+    size: 60%
 
 My new MacBook Air backup fine to this share also in his Power Nap (with PowerAdapter) but often I took it in to my bag and run frantic out of my flat. In this moment TimeMachine copied some new files and update some hardlinks and out of this the sparseimage with the backup data broke up two times. The first one I was able to repair the image but the second one died.
 
