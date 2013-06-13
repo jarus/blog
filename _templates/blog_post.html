@@ -1,17 +1,28 @@
 {% extends "layout.html" %}
 {% block title %}{{ post.title }}{% endblock %}
 {% block body %}
-  <h1>{{ post.title }}</h1>
-  <p class="date">
-    written on {{ post.pub_date.strftime("%b %d, %Y") }}
-  </p>
-  <div class="blog_post">
-    {{ post.body }}
-  </div>
+  <div itemscope itemtype="http://schema.org/BlogPosting">
+    <h1 itemprop="name">{{ post.title }}</h1>
+    <p class="date">
+      written on <span itemprop="datePublished" content="{{ post.pub_date.strftime('%Y-%m-%d') }}">{{ post.pub_date.strftime("%b %d, %Y") }}</span> by <span itemprop="author">{{ config['AUTHOR_NAME'] }}</span>
+    </p>
 
-  {% if tags %}
-  {{ tags(post) }}
-  {% endif %}
+    <div style="display: none;" itemprop="articleSection">
+      {% if post.summary != post.body %}
+      {{ post.summary }}
+      {% else %}
+      {{ post.body|truncate() }}
+      {% endif %}
+    </div>
+
+    <div class="blog_post" itemprop="articleBody">
+      {{ post.body }}
+    </div>
+
+    {% if tags %}
+    {{ tags(post) }}
+    {% endif %}
+  </div>
 
   <ul class="pager">
     {% if prev %}

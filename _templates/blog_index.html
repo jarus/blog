@@ -3,7 +3,7 @@
 {% block body %}
   {%- for post in posts.page_content|sort(attribute='pub_date',reverse=True) %}
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p>{{ post.pub_date.strftime("%b %d, %Y") }}</p>
+  <p><span itemprop="datePublished" content="{{ post.pub_date.strftime('%Y-%m-%d') }}">{{ post.pub_date.strftime("%b %d, %Y") }}</span></p>
   {% if post.summary %}
   <div class="summary">{{ post.summary }}</div>
   {% endif %}
@@ -14,7 +14,7 @@
   <hr>
   {% endif %}
   {%- endfor %}
-  
+
   {% if posts.need_pagination %}
   <div class="pagination pagination-centered">
     <ul>
@@ -23,13 +23,13 @@
       {%- else -%}
       <li class="disabled"><a href="#">&laquo; Previous</a></li>
       {%- endif %}
-      
+
       {% for i in range(1, posts.pages + 1) %}
       <li{% if posts.page == i %} class="active"{% endif %}>
         <a href="{{ url_for('blog.index', page=i) }}">{{ i }}</a>
       </li>
       {% endfor %}
-      
+
       {% if posts.has_next -%}
       <li><a href="{{ url_for('blog.index', page=posts.page + 1) }}">Next &raquo;</a></li>
       {%- else -%}
