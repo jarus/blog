@@ -9,9 +9,9 @@
 
     <div style="display: none;" itemprop="articleSection">
       {% if post.summary != post.body %}
-      {{ post.summary }}
+      {{ post.summary|striptags() }}
       {% else %}
-      {{ post.body|truncate() }}
+      {{ post.body|truncate()|striptags() }}
       {% endif %}
     </div>
 
