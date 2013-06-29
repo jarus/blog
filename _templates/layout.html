@@ -37,8 +37,14 @@
           {% block body %}{% endblock %}
 
           <footer class="footer">
-            <p class="pull-right"><i class="icon-rss"></i> <a href="{{ url_for('atom.atom_feed') }}">RSS Feed</a></p>
-              <p><i class="icon-github"></i> <a href="https://github.com/jarus">GitHub</a> // <i class="icon-twitter"></i> <a href="https://twitter.com/christophheer">Twitter</a> // <i class="icon-envelope"></i> <a href="mailto:christoph.heer@googlemail.com">E-Mail</a></p>
+            <p class="pull-right">
+              <i class="icon-rss"></i> <a href="{{ url_for('atom.atom_feed') }}">RSS Feed</a></p>
+              <p>
+                <i class="icon-github"></i> <a href="https://github.com/jarus">GitHub</a> //
+                <i class="icon-twitter"></i> <a href="https://twitter.com/christophheer">Twitter</a> //
+                <i class="icon-google-plus-sign"></i> <a href="https://plus.google.com/116454506795316911309?rel=author">Google</a> //
+                <i class="icon-envelope"></i> <a href="mailto:christoph@thelabmill.de">E-Mail</a>
+              </p>
               <p class="pull-right"><i class="icon-arrow-up"></i> <a href="#">Back to top</a></p>
               <p>&copy; Copyright {{ date.today().strftime("%Y") }} by {{ config['AUTHOR_NAME'] }}</p>
               <p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
