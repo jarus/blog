@@ -3,14 +3,14 @@ Why I deactivated Power Nap of Mac OS X
 
 :public: True
 :tags: ["mac", "os x", "timemachine"]
-:summary: "I backup my Mac Book to my NAS but Power Nap broken it two times. :("
+:summary: "I backup my Mac Book to my NAS but Power Nap broke it two times. :("
 
-I really like the idea behind Power Nap of the OS X but I got big trouble afterwards. I backup my Mac with TimeMachine on my NAS (based on Debian Squeeze) with netatalk, which works sweet. Oh, by the way guys of netatalk your are great.
+I really like the idea behind Power Nap of Mac OS X but I got big trouble afterwards. I backup my Mac with TimeMachine on my NAS (based on Debian Squeeze) with netatalk which works sweet. By the way the guys are great behind netatalk.
 
 .. image:: /static/img/2013-02-09-why-i-deactivated-power-nap-of-mac-osx/timemachine.png
     :scale: 60%
 
-My new MacBook Air backup fine to this share also in his Power Nap (with PowerAdapter) but often I took it in to my bag and run frantic out of my flat. In this moment TimeMachine copied some new files and update some hardlinks and out of this the sparseimage with the backup data broke up two times. The first one I was able to repair the image but the second one died.
+My new MacBook Air backup fine to this share also in his Power Nap (with PowerAdapter) but often I took it in my bag and run frantic out of my flat. Sometimes in this moment TimeMachine copied some new files and update some hardlinks and out of this the sparseimage with the backup broke up two times. The first one I was able to repair the image but the second one died.
 
 For interested people::
 
@@ -58,4 +58,4 @@ For interested people::
     The volume Time Machine Backups was found corrupt and needs to be repaired.
     Error: This disk needs to be repaired. Click Repair Disk.
 
-Sorry I forgot to copy the log of the repair process but the result was hdutils isn't able to repair the volume. Now I started a fresh backup with disabled Power Nap.
+Sorry I forgot to copy the log of the repair process but the result was hdutils isn't able to repair the volume. Now I started a fresh backup with disabled Power Nap. I wish Apple had replace HFS+ with ZFS in 10.6 but I think this will never happen.
